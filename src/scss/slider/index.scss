@@ -4,6 +4,7 @@
     flex-direction: column;
     min-height: calc(100vh - 90px);
     justify-content: center;
+    overflow: hidden;
 
     .slider-item {
         .slide {
