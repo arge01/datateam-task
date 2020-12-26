@@ -44,7 +44,7 @@ export default class FocusOnSelect extends Component {
                 <div className="slider">
                     <Slide {...settings}>{data.map((val, i) => {
                         return (
-                            <div key={key} className="slider-item">
+                            <div key={i} className="slider-item">
                                 <div className="slide">
                                     <div className="items">
                                         <div style={{ backgroundImage: `url(${d1})` }} className="img">
