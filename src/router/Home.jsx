@@ -1,6 +1,12 @@
 import React from 'react';
 import Container from '../components/home';
 
-const Home = () => <Container/>
+const Home = () => {
+    return (
+        <div className="page">
+            <Container/>
+        </div>
+    )
+}
 
 export default Home;

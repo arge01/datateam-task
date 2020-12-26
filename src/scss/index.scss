@@ -15,6 +15,10 @@ body {
     a:hover {text-decoration: none}
 }
 
+.page {
+    padding-top: 90px;
+}
+
 @import "./header/";
 @import "./container/";
 @import "./slider/";

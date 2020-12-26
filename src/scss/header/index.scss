@@ -5,7 +5,9 @@
     -moz-box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.3);
     background: #fff;
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 
     .logo {
         img {
