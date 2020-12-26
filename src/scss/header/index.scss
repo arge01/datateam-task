@@ -1,0 +1,118 @@
+.header {
+    width: 100%;
+    height: 90px;
+    -webkit-box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    position: relative;
+
+    .logo {
+        img {
+            max-height: 50px;
+
+            @media (max-width: 768px) {
+                max-height: 40px;
+            }
+        }
+    }
+
+    .hamburger-button {
+        display: none;
+        justify-content: flex-end;
+
+        @media (max-width: 768px) {
+            & {
+                display: flex;
+                font-size: 12pt;
+
+                .buttons.b-open {display: flex;}
+                .buttons.b-close {display: none;}
+
+                .buttons {
+                    font-size: 2em;
+                    margin: 0;
+                    line-height: 84px;
+                    height: 90px;
+                    color: #07a9e2;
+                }
+            }
+        }
+    }
+
+    .menu {
+        transition: all .3s cubic-bezier(0.99, 0.99, 0.94, 0.07);
+        @media (max-width: 768px) {
+            & {
+                position: absolute;
+                width: 100%;
+                top: 90px;
+                z-index: 100;
+                background: #08a9e1;
+                overflow: hidden;
+            }
+
+            &.m-open {
+                width: 100%;
+                height: auto;
+            }
+
+            &.m-close {
+                height: 0;
+            }
+        }
+        ul {
+            height: 90px;
+            display: flex;
+            flex-direction: row;
+
+            @media (max-width: 768px) {
+                & {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                    width: 100%;
+                }
+            }
+
+            li {
+                height: 90px;
+                display: flex;
+                align-items: center;
+
+                @media (max-width: 768px) {
+                    & {
+                        height: 65px;
+                        border: 1px solid #67d4f8;
+                    }
+                }
+
+                a {
+                    display: flex;
+                    height: 90px;
+                    align-items: center;
+                    color: #595a5c;
+                    font-weight: bold;
+                    padding-left: 15px;
+                    padding-right: 15px;
+
+                    @media (max-width: 768px) {
+                        & {
+                            height: 63px;
+                            font-size: 10pt;
+                        }
+                    }
+                }
+
+                &:hover,
+                &.active {
+                    a {
+                        color: #fff;
+                        background: #08a9e1;
+                    }
+                }
+            }
+        }
+    }
+}
