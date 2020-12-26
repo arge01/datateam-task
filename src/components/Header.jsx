@@ -18,7 +18,7 @@ const Header = () => {
                 <div className="row justify-content-end">
                     <ul>
                         <li className="active"><a href="/">Item #1</a></li>
-                        <li><a href="/ikinci-task">Item #2</a></li>
+                        <li><a href="/project-2">Item #2</a></li>
                         <li><a href="#3">Item #3</a></li>
                     </ul>
                 </div>
