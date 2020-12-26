@@ -21,7 +21,7 @@ const Header = () => {
                         <div className={`col menu ${menu ? "m-open" : "m-close"}`}>
                             <div className="row justify-content-end">
                                 <ul>
-                                    <li><NavLink activeClassName="active-in" to="">Item #1</NavLink></li>
+                                    <li><NavLink activeClassName="active-in" to="/">Item #1</NavLink></li>
                                     <li><NavLink activeClassName="active-in" to="/project-2">Item #2</NavLink></li>
                                     <li><NavLink activeClassName="active-in" to="#3">Item #3</NavLink></li>
                                 </ul>
