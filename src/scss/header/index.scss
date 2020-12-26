@@ -43,7 +43,7 @@
     }
 
     .menu {
-        transition: all .3s cubic-bezier(0.99, 0.99, 0.94, 0.07);
+        transition: all .2s cubic-bezier(0.99, 0.99, 0.94, 0.07);
         @media (max-width: 768px) {
             & {
                 position: absolute;
@@ -57,10 +57,14 @@
             &.m-open {
                 width: 100%;
                 height: auto;
+                transform: translateY(0);
+                transform: translateX(0);
             }
 
             &.m-close {
                 height: 0;
+                transform: translateY(-100%);
+                transform: translateX(5%);
             }
         }
         ul {
