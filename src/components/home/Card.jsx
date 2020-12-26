@@ -1,12 +1,12 @@
 import React from 'react';
-import { IData } from '../../services';
+import { IData, AData } from '../../services';
 
 const Card = ({item, i}) => {
     const IMap = (data, item) => {
         const html = [];
         for (const [key, value] of Object.entries(data)) {
             html.push(
-                <li key={key}><b>{item[key]}</b>: <span>{item[key]}</span></li>
+                <li key={key}><b>{AData(key)}</b>: <span>{item[key]}</span></li>
             )
         }
         return html;
