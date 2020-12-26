@@ -14,8 +14,8 @@ const Header = () => {
                         </div>
                         <div className="col hamburger-button">
                             <div className="toggle-menu">
-                                <span onClick={() => setMenu(true)} className={`buttons ${!menu ? "b-open" : "b-close"}`}>≣</span>
-                                <span onClick={() => setMenu(false)} className={`buttons ${menu ? "b-open" : "b-close"}`}>⨉</span>
+                                <span onClick={() => setMenu(true)} className={`buttons ${!menu ? "b-open" : "b-close"}`}>≡</span>
+                                <span style={{fontSize: "2em"}} onClick={() => setMenu(false)} className={`buttons ${menu ? "b-open" : "b-close"}`}>⨉</span>
                             </div>
                         </div>
                         <div className={`col menu ${menu ? "m-open" : "m-close"}`}>
